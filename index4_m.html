@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir Cita</title>
+    <link rel="stylesheet" href="estilo4.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Agendar Cita</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" required>
+
+            <label for="cita">Cita para:</label>
+            <select id="cita" name="cita">
+                <option value="odontologia">Odontología</option>
+                <option value="medicina">Medicina General</option>
+                <option value="psicologia">Psicología</option>
+                <option value="fisioterapia">Fisioterapia</option>
+            </select>
+
+            <label for="facultad">Facultad:</label>
+            <select id="facultad" name="facultad">
+                <option value="ingenieria">Ingeniería</option>
+                <option value="ciencias_sociales">Ciencias Sociales</option>
+                <option value="economia">Economía</option>
+                <option value="licenciatura">Licenciatura</option>
+            </select>
+
+            <label for="fecha">Selecciona una fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <button type="submit">Pedir Cita</button>
+        </form>
+    </div>
+
+    <!-- Botón para volver atrás -->
+    <div class="boton-atras">
+        <button onclick="window.history.back()">⬅️ Atrás</button>
+    </div>
+
+</body>
+</html>

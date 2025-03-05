@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Exámenes</title>
+    <link rel="stylesheet" href="stilo3.css">
+    <style>
+        .info-icon {
+            margin-left: 10px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>🔆 <b>Resultados de Exámenes de Laboratorio</b></h2>
+
+    <!-- Leyenda de colores -->
+    <div class="leyenda">
+        <p><b>Interpretación:</b></p>
+        <div class="bolitas">
+            <span class="circle verde"></span> Normal
+            <span class="circle amarillo"></span> Límite Alto
+            <span class="circle naranja"></span> Bajo
+            <span class="circle dorado"></span> Cerca del Óptimo
+            <span class="circle azul"></span> Rango por Edad (PSA)
+        </div>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>Prueba</th>
+                <th>Resultado</th>
+                <th>Interpretación</th>
+            </tr>
+            <tr>
+                <td>Glucosa en ayunas <a href='https://medlineplus.gov/spanish/glucose.html' target='_blank' class='info-icon'>❓</a></td>
+                <td>89.6 mg/dl</td>
+                <td>
+                    ⚪ ⚪ ⚪ <span class="circle verde"></span> <b>Normal</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Colesterol Total <a href='https://medlineplus.gov/spanish/cholesterol.html' target='_blank' class='info-icon'>❓</a></td>
+                <td>177 mg/dl</td>
+                <td>
+                    ⚪ <span class="circle amarillo"></span> ⚪ ⚪ <b>Límite Alto</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Colesterol HDL <a href='https://medlineplus.gov/spanish/cholesterol.html' target='_blank' class='info-icon'>❓</a></td>
+                <td>37.59 mg/dl</td>
+                <td>
+                    ⚪ <span class="circle naranja"></span> ⚪ ⚪ <b>Bajo</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Colesterol LDL <a href='https://medlineplus.gov/spanish/cholesterol.html' target='_blank' class='info-icon'>❓</a></td>
+                <td>121.41 mg/dl</td>
+                <td>
+                    ⚪ <span class="circle dorado"></span> ⚪ ⚪ <b>Cerca del óptimo</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Colesterol VLDL Calculado <a href='https://medlineplus.gov/spanish/cholesterol.html' target='_blank' class='info-icon'>❓</a></td>
+                <td>18 mg/dl</td>
+                <td>
+                    ⚪ ⚪ ⚪ <span class="circle verde"></span> <b>Normal</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Triglicéridos <a href='https://medlineplus.gov/spanish/triglycerides.html' target='_blank' class='info-icon'>❓</a></td>
+                <td>92.00 mg/dl</td>
+                <td>
+                    ⚪ ⚪ ⚪ <span class="circle verde"></span> <b>Normal</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Antígeno Prostático Específico <a href='https://medlineplus.gov/spanish/prostatecancerscreening.html' target='_blank' class='info-icon'>❓</a></td>
+                <td>0.32 ng/ml</td>
+                <td>
+                    <span class="circle azul activa"></span> <b>&lt;40-49 años:</b> Normal<br>
+                    <span class="circle azul"></span> <b>50-59 años:</b> Normal<br>
+                    <span class="circle azul"></span> <b>60-69 años:</b> Normal<br>
+                    <span class="circle azul"></span> <b>70+ años:</b> Normal
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="boton-descargar">
+        <a href="resultados.pdf" download="resultados.pdf">
+            <img src="descargar.png" alt="Descargar PDF" class="descargar-img">
+        </a>
+    </div>
+    
+    
+    <!-- Diagnóstico Clínico -->
+
+    <!-- Diagnóstico Clínico -->
+    <!-- Diagnóstico Clínico -->
+<div class="diagnostico">
+    <h3>Diagnóstico Clínico</h3>
+    <p>La glicemia en ayunas es de 89 mg/dl, un valor dentro del rango normal (<110 mg/dl). Sin embargo, si estuviera entre 110 y 125 mg/dl, se consideraría prediabetes, y si fuera igual o superior a 126 mg/dl, indicaría un posible diagnóstico de diabetes que requeriría confirmación médica.</p>
+
+    <p>El colesterol total es de 177 mg/dl, lo que se considera un nivel saludable (<200 mg/dl). El colesterol HDL es de 37.59 mg/dl, ligeramente bajo, ya que lo ideal es que sea mayor a 40 mg/dl. Este tipo de colesterol es conocido como “bueno” porque ayuda a eliminar el colesterol de las arterias, reduciendo el riesgo de enfermedades cardiovasculares.</p>
+
+    <p>El colesterol LDL es de 121.41 mg/dl, dentro del rango cercano a óptimo (100-129 mg/dl), aunque lo recomendable para una mejor salud cardiovascular es que sea inferior a 100 mg/dl, ya que niveles más altos pueden favorecer la acumulación de placa en las arterias. El colesterol VLDL es de 18 mg/dl, dentro del rango normal (2-30 mg/dl), y los triglicéridos no presentan elevaciones, con un valor dentro de los límites saludables (0-150 mg/dl).</p>
+
+    <p>En cuanto al antígeno prostático específico (PSA), aunque no se especifica la edad del paciente, el resultado está dentro de los valores negativos en todos los casos, lo que indica que no hay indicios de anomalías prostáticas según los valores de referencia establecidos.</p>
+</div>
+
+
+    <!-- Dieta Alimenticia -->
+    <div class="dieta">
+        <h3>Dieta Alimenticia</h3>
+        <table>
+            <tr>
+                <th>Comida</th>
+                <th>Alimentos recomendados</th>
+                <th>Cantidad</th>
+            </tr>
+            <tr>
+                <td>Desayuno</td>
+                <td>Avena con frutas y nueces</td>
+                <td>1 taza</td>
+            </tr>
+            <tr>
+                <td>Media mañana</td>
+                <td>Yogur griego con semillas de chía</td>
+                <td>1 porción</td>
+            </tr>
+            <tr>
+                <td>Almuerzo</td>
+                <td>Pechuga de pollo a la plancha con ensalada y quinoa</td>
+                <td>150g de pollo, 1 taza de ensalada, 1/2 taza de quinoa</td>
+            </tr>
+            <tr>
+                <td>Merienda</td>
+                <td>Frutas con almendras</td>
+                <td>1 porción</td>
+            </tr>
+            <tr>
+                <td>Cena</td>
+                <td>Pescado al horno con verduras</td>
+                <td>150g de pescado, 1 taza de verduras</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Rutina Deportiva -->
+    <div class="rutina">
+        <h3>Rutina Deportiva</h3>
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Ejercicio</th>
+                <th>Duración</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>Cardio + Pesas (tren superior)</td>
+                <td>30 min + 30 min</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>Natación o bicicleta</td>
+                <td>40 min</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>Cardio + Pesas (tren inferior)</td>
+                <td>30 min + 30 min</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>Caminata rápida o resistencia</td>
+                <td>40 min</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>Cardio + Calistenia</td>
+                <td>30 min + 30 min</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>Yoga o senderismo</td>
+                <td>40 min</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>Descanso activo (caminar, estiramientos)</td>
+                <td>30 min</td>
+            </tr>
+        </table>
+    </div>
+
+     <!-- Botón para volver atrás -->
+     <div class="boton-atras">
+        <button onclick="window.history.back()">⬅️ Atrás</button>
+    </div>
+
+    <script>
+        function descargarPDF() {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>
+
+
+</body>
+</html>
