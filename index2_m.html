@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Médica</title>
+    <!-- Añadimos la fuente Poppins desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo2.css"> <!-- Usando el nuevo estilo -->
+</head>
+<body>
+
+    <!-- Encabezado tipo plataforma médica -->
+    <header class="encabezado">
+        
+        <nav class="menu">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Inicio ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Aca hay elementos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sedes ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Aca hay elementos</a></li>
+                    </ul>
+                </li>
+               
+                <!-- Botón Universidad Surcolombiana alineado a la izquierda -->
+                <li>
+                    <a href="https://www.usco.edu.co/es/" class="btn-usco">Universidad Surcolombiana</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <button class="btn-salir" onclick="confirmarSalida()">Salir</button>
+    </header>
+    <div class="contenedor-principal">
+        
+        <div class="banner-saludusco">
+            <img src="usco.png" alt="SaludUSCO" class="banner-img">
+        </div>
+        
+        <div class="mensaje-bienvenida">Tu bienestar, nuestra prioridad</div>
+        
+        <div class="botones-container">
+            <button class="boton" onclick="window.location.href='index3_p.html'">Resultados Exámenes</button>
+
+            <button class="boton" onclick="window.location.href='index4_m.html'">Pedir Cita</button>
+            <button class="boton" onclick="window.location.href='index5_f.html'">Farmacias</button>
+        </div>
+    </div>
+</body>
+    
+    
+    
+    <script>
+        // Función para confirmar la salida
+        function confirmarSalida() {
+            const confirmar = confirm("¿Seguro que quiere salir?");
+            if (confirmar) {
+                window.location.href = './index_m.html'; // Redirecciona al login
+            }
+        }
+    </script>
+
+</body>
+
+<script>
+    // Oscurecer el fondo al pasar el mouse
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', () => {
+            document.body.classList.add('overlay');
+        });
+        dropdown.addEventListener('mouseleave', () => {
+            document.body.classList.remove('overlay');
+        });
+    });
+</script>
+
+<!-- Logo centrado para descargar PDF 
+<div class="logo-pdf">
+    <a href="gato.pdf" download>
+        <img src="logo_pdf.png" alt="Descargar PDF">
+    </a>
+</div> -->
+
+
+</html>
+
