@@ -1,0 +1,245 @@
+/* Encabezado */
+.encabezado {
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;  /* Se redujo el padding */
+    z-index: 100;
+    position: relative;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.menu ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Estilo para el dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    min-width: 150px;
+    z-index: 50;
+    transition: opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #4CAF50;
+}
+
+/* Botón Universidad Surcolombiana */
+.btn-usco {
+    color: #4CAF50 !important;   /* Verde permanente */
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px 10px;
+    cursor: default; /* Evita que aparezca la manito */
+}
+
+
+/* Mostrar el menú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Publicidad y Botón Salir */
+.publicidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.publicidad img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.btn-salir {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.btn-salir:hover {
+    background-color: #c9302c;
+}
+
+/* Logo centrado para descargar PDF */
+.logo-pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;  /* Ajusta la altura para centrar en pantalla */
+    text-align: center;
+}
+
+.logo-pdf img {
+    width: 150px;  /* Tamaño del logo */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo-pdf img:hover {
+    transform: scale(1.1);  /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Título */
+.titulo-saludusco {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: #166534;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mensaje-bienvenida {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: #166534;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+}
+
+/* Contenedor de los botones */
+.botones-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+/* Contenedor general para centrar los elementos */
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px; /* Ajusta según sea necesario */
+}
+
+.banner-saludusco {
+    text-align: center;  /* Centrar imagen */
+    margin-top: -40px;   /* Sube la imagen */
+    margin-bottom: 10px; /* Reduce el espacio debajo */
+}
+
+.banner-img {
+    width: 100%;        /* Usa todo el ancho disponible */
+    max-width: 700px;   /* Aumenta el tamaño máximo */
+    height: auto;      /* Mantiene la proporción */
+    object-fit: cover;  /* Evita que se deforme */
+}
+
+/* Mensaje de bienvenida centrado */
+.mensaje-bienvenida {
+    font-size: 28px;
+    font-weight: 500;
+    color: #166534;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.botones-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones en la línea */
+    gap: 20px; /* Espaciado entre botones */
+    margin-top: 50px; /* Ajusta la distancia con el texto */
+    width: 80%; /* Ajusta el ancho total de los botones */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.boton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+    
+    

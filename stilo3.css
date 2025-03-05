@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fondo completamente blanco */
+    margin: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px; /* Más grande */
+    margin-bottom: 15px;
+    color: #2ECC71; /* Verde claro */
+}
+
+.leyenda {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.bolitas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* Estilos de la tabla */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 95%; /* Más grande */
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px; /* Espaciado más grande */
+    text-align: left;
+    font-size: 18px; /* Letra más grande */
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilos de las bolitas de colores */
+.circle {
+    height: 16px; /* Más grande */
+    width: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* Colores de interpretación */
+.verde { background-color: green; }
+.amarillo { background-color: yellow; }
+.naranja { background-color: orange; }
+.dorado { background-color: gold; }
+.azul { background-color: #0056b3; }
+
+/* Destacar la bolita de 44 años */
+.activa {
+    border: 3px solid black; /* Borde negro para resaltar */
+}
+
+.diagnostico {
+    margin-top: 20px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-left: 5px solid #2ECC71;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.descargar-img {
+    width: 50px;  /* Ajusta el tamaño inicial */
+    transition: transform 0.3s ease;  /* Suaviza el efecto */
+    cursor: pointer;  /* Cambia el cursor al pasar por encima */
+}
+
+.descargar-img:hover {
+    transform: scale(1.2);  /* Amplía un 20% al pasar el mouse */
+}
