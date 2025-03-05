@@ -1,0 +1,59 @@
+/* Estilo general */
+body {
+    background-color: #f2f7f4; /* Blanco con toque verde suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #4CAF50; /* Verde tipo hospital */
+    margin-bottom: 20px;
+}
+
+/* Estilo de los inputs */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+.imagen-login {
+    margin-top: 20px;
+    width: 50%; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+/* Estilo del botón */
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+    
+    

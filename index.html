@@ -1,0 +1,48 @@
+<!-- Juan Camilo Trujillo Leiva 20211199220 -->
+<!-- Leidy Johana Casas Vanegas 20211198957 -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Usuario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Contenedor del formulario de ingreso -->
+    <div class="login-container">
+        <h2>Ingreso de Usuario</h2>
+        <form onsubmit="return validarUsuario()">
+            <input type="text" id="usuario" placeholder="Usuario" required>
+            <input type="password" id="contraseña" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="mensaje-error"></p>
+
+        <!-- Imagen debajo del formulario -->
+        <img src="salud.png" alt="Imagen Hospital" class="imagen-login">
+    </div>
+
+    <script>
+        // Función de validación
+        function validarUsuario() {
+            const usuario = document.getElementById('usuario').value;
+            const contraseña = document.getElementById('contraseña').value;
+            const mensajeError = document.getElementById('mensaje-error');
+
+            if (usuario === 'IngenieroJulian' && contraseña === 'USCO2025') {
+                alert('¡Bienvenido, Ingeniero Julian!');
+                window.location.href = 'index2_m.html'; // Redirecciona a la segunda página
+                return false;
+            } else {
+                mensajeError.textContent = 'Usuario o contraseña incorrectos';
+                mensajeError.style.color = '#d9534f'; // Rojo suave
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>
