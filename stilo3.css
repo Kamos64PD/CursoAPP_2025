@@ -110,3 +110,29 @@ th {
 .dieta table {
     margin-left: 30px; /* Ajusta el valor según lo necesites */
 }
+
+div.genero {
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    padding: 10px; /* Agrega un poco de espacio alrededor */
+}
+
+div.genero label {
+    display: inline-block;
+    background-color: #f0f0f0; /* Fondo suave para resaltar */
+    padding: 8px 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Indica que es clickeable */
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+div.genero label:hover {
+    background-color: #ddd; /* Cambio de color al pasar el cursor */
+}
+
+div.genero input {
+    transform: scale(1.2); /* Agranda los radio buttons un poco */
+    margin-right: 5px;
+}
+
