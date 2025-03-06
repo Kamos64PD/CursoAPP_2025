@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white; /* Fondo completamente blanco */
+    background-color: white; 
     margin: 20px;
     text-align: center;
 }
 
 h2 {
-    font-size: 30px; /* Más grande */
+    font-size: 30px; 
     margin-bottom: 15px;
-    color: #2ECC71; /* Verde claro */
+    color: #2ECC71; 
 }
 
 .leyenda {
@@ -28,7 +28,6 @@ h2 {
     font-size: 18px;
 }
 
-/* Estilos de la tabla */
 .container {
     display: flex;
     justify-content: center;
@@ -36,7 +35,7 @@ h2 {
 }
 
 table {
-    width: 95%; /* Más grande */
+    width: 95%; 
     border-collapse: collapse;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -46,9 +45,9 @@ table {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 15px; /* Espaciado más grande */
+    padding: 15px;
     text-align: left;
-    font-size: 18px; /* Letra más grande */
+    font-size: 18px; 
 }
 
 th {
@@ -57,16 +56,14 @@ th {
     font-size: 20px;
 }
 
-/* Estilos de las bolitas de colores */
 .circle {
-    height: 16px; /* Más grande */
+    height: 16px; 
     width: 16px;
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
 }
 
-/* Colores de interpretación */
 .blanco { background-color: white; border: 1px solid black; }
 .verde { background-color: green; }
 .amarillo { background-color: yellow; }
@@ -74,9 +71,8 @@ th {
 .dorado { background-color: rgb(186, 247, 105); }
 .azul { background-color: #0056b3; }
 
-/* Destacar la bolita de 44 años */
 .activa {
-    border: 3px solid black; /* Borde negro para resaltar */
+    border: 3px solid black; 
 }
 .resultado-input {
     width: 100px;
@@ -108,31 +104,25 @@ th {
 }
 
 .dieta table {
-    margin-left: 30px; /* Ajusta el valor según lo necesites */
-}
-
-div.genero {
-    font-size: 18px; /* Aumenta el tamaño del texto */
-    font-weight: bold; /* Hace que el texto sea más grueso */
-    padding: 10px; /* Agrega un poco de espacio alrededor */
+    margin-left: 30px; 
 }
 
 div.genero label {
     display: inline-block;
-    background-color: #f0f0f0; /* Fondo suave para resaltar */
+    background-color: #f0f0f0; 
     padding: 8px 15px;
-    border-radius: 8px; /* Bordes redondeados */
-    cursor: pointer; /* Indica que es clickeable */
+    border-radius: 8px; 
+    cursor: pointer; 
     margin: 5px;
     transition: background 0.3s;
 }
 
 div.genero label:hover {
-    background-color: #ddd; /* Cambio de color al pasar el cursor */
+    background-color: #ddd;
 }
 
 div.genero input {
-    transform: scale(1.2); /* Agranda los radio buttons un poco */
+    transform: scale(1.2); 
     margin-right: 5px;
 }
 
